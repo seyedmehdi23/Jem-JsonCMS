@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jem - JsonCMS</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3 shadow p-3 mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: #ffdc14;">{ Jem }</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ol class="navbar-nav breadcrumb me-auto" style="margin-bottom: 0;">
+                </ol>
+
+                <div class="d-flex">
+                    <a class="btn btn-primary me-2">Open</a>
+                    <!-- Example split danger button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Download</a></li>
+                            <li><a class="dropdown-item" href="#">Local Save</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container px-5">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Visualization</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Text</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Json</a>
+            </li>
+        </ul>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-auto">
+                    <nav id="navbar-example3" class="navbar flex-column align-items-stretch p-3">
+                        <a class="navbar-brand" href="#">Keys</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">Item 1</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                            </nav>
+                            <a class="nav-link" href="#item-2">Item 2</a>
+                            <a class="nav-link" href="#item-3">Item 3</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+                <div class="col gy-4">
+                    <h5>Values</h5>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                            id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">editable value</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
