@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jem - JsonCMS</title>
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
@@ -25,95 +25,34 @@
                 </ol>
 
                 <div class="d-flex">
-                    <a class="btn btn-warning me-2">Open</a>
-                    <!-- Example split danger button -->
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-success">Save</button>
-                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Download</a></li>
-                            <li><a class="dropdown-item" href="#">Local Save</a></li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </div>
     </nav>
     <div class="container px-5">
-        <ul class="nav nav-tabs">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="visual-tab" data-bs-toggle="tab" data-bs-target="#visual-tab-pane"
-                    type="button" role="tab" aria-controls="visual-tab-pane" aria-selected="true">Visualization</button>
-
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="text-tab" data-bs-toggle="tab" data-bs-target="#text-tab-pane"
-                    type="button" role="tab" aria-controls="text-tab-pane">Text</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="json-tab" data-bs-toggle="tab" data-bs-target="#json-tab-pane"
-                    type="button" role="tab" aria-controls="json-tab-pane">Json</button>
-
-            </li>
-        </ul>
-
-        <div class="container">
-            <div class="tab-content" id="tabs_contents">
-                <div class="tab-pane fade show active" id="visual-tab-pane" role="tabpanel" aria-labelledby="visual-tab"
-                    tabindex="0">
-                    <div class="row">
-                        <div class="col-md-auto">
-                            <nav id="navbar-example3" class="navbar flex-column align-items-stretch p-3">
-                                <a class="navbar-brand" href="#">Keys</a>
-                                <nav class="nav nav-pills flex-column">
-                                    <a class="nav-link" href="#item-1">Item 1</a>
-                                    <nav class="nav nav-pills flex-column">
-                                        <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                                        <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-                                    </nav>
-                                    <a class="nav-link" href="#item-2">Item 2</a>
-                                    <a class="nav-link" href="#item-3">Item 3</a>
-                                    <nav class="nav nav-pills flex-column">
-                                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                                    </nav>
-                                </nav>
-                            </nav>
-                        </div>
-                        <div class="col gy-4">
-                            <h5>Values</h5>
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here"
-                                    id="floatingTextarea"></textarea>
-                                <label for="floatingTextarea">editable value</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="text-tab-pane" role="tabpanel" aria-labelledby="text-tab" tabindex="0">
-                    <br>
-                    <div class="container">
-                        text view fkjds lkfs lkfjd lkfds;fdsl jflfdsjlkds dsf
-                        ds wef sdfsd fds fds fds fds fds
-                        f ds fdsf dsfsd fds fd fdsfdsf gfsfds gds fgfds gfds gfds gsfdg fds gfdsg fds
-                        sfg sfdgfds gfds gfdsg fds gfds g
-                        sgfds gfds gs
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="json-tab-pane" role="tabpanel" aria-labelledby="json-tab" tabindex="0">
-                    <br>
-                    <div class="container">
-                        json view f;ldskf sldf lkd f fdsfds fdsfdsfds fdsf dsfsdsf
-                        dsf sdfs fds fds fdsfds af dsf sadf dsa fdsaf adsf sadf '
-                        asdf as fdsa fdsa fdsa fdsa fsa'
-                        a fds fa fdsaf dsa fadsf dsa fdsa fdsa fsa
-                        af as fs
-                    </div>
-                </div>
+        <div class="card text-center">
+            <div class="card-header">
+                Welcome To Jem!
             </div>
-
+            <div class="card-body">
+                <h5 class="card-title">Json Editor & Visualization System</h5>
+                <p class="card-text">Open your target json data From Local File or URL</p>
+                <form action="/load_json" method="post">
+                    <div class="input-group">
+                        <input type="file" class="form-control" id="inputGroupFile04"
+                            aria-describedby="inputGroupFileAddon04" aria-label="Upload" name="json_file">
+                    </div>
+                    or
+                    <br>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="url">
+                        <button type="button" class="btn btn-outline-secondary">Clipboard</button>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Open</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -131,8 +70,8 @@
         </div>
     </div>
 
-    <script src="../assets/js/components.js"></script>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
